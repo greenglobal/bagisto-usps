@@ -26,8 +26,7 @@ Your customers are now able to select the new shipping method.
 ## Example data
 
 ### USPS key
-- Username: 738GG0007805
-- Password: 495NK72CF552
+- Username: 928GREEN7389
 
 ### Shipper address
 - Street Address: 8383 Bowman Dr. Los Angeles
