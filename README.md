@@ -2,6 +2,7 @@
 This extension used for calculating shipping rate with the USPS services.
 ## Features
 - Calculate shipping rate with USPS services.
+- Track your shipment by tracking number.
 ## Requirements
 - [Bagisto v1.2](https://github.com/bagisto/bagisto)
 - [vinceg/usps-php-api](https://packagist.org/packages/vinceg/usps-php-api)
@@ -41,3 +42,15 @@ Your customers are now able to select the new shipping method.
 - Zip: 20171
 - City: Herndon
 - Country: US
+
+### Tracking number
+- LZ661737688US
+- 9400111298370718571488
+
+## Guide
+
+### Track your shipment by tracking number.
+- Go to `https://<your-site>/admin/sales/tracking/{tracking-number}`.
+
+### Get shipment infomations
+- Use `uspsTrackById($trackingIds)` method to get shipment infomations with `trackingIds` are tracking number array.
