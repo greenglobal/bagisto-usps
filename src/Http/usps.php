@@ -7,6 +7,7 @@ use USPS\RatePackage;
         {
             $services = explode(',', core()->getConfigData('sales.carriers.uspsrate.allowed_methods'));
             foreach ($services as $key => $service) {
+
                 if (count($services) > 1 && $service == 'ALL')
                     continue;
 
@@ -53,6 +54,7 @@ use USPS\RatePackage;
 
                 $response = $rate->getArrayResponse();
                 $rateDetails = [];
+
                 if (! empty($response['RateV4Response']['Package']['Postage'])) {
                     $postage = $response['RateV4Response']['Package']['Postage'];
                     if (! empty($postage['MailService'])) {
@@ -87,9 +89,8 @@ use USPS\RatePackage;
             $tracking->setTestMode(!core()->getConfigData('sales.carriers.uspsrate.production_mode') ?? false);
 
             // Add the package id to the track confirm lookup class
-            foreach ($trackingIds as $key => $trackingId) {
+            foreach ($trackingIds as $key => $trackingId)
                 $tracking->addPackage($trackingId);
-            }
 
             // Perform the call
             $tracking->getTracking();
