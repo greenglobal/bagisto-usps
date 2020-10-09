@@ -1,0 +1,32 @@
+{
+    "name": "greenglobal/bagisto-usps",
+    "type": "library",
+    "description": "This extension used for calculating shipping rate with the USPS services.",
+    "keywords": ["usps", "extension-usps", "bagisto-usps", "greenglobal"],
+    "homepage": "https://github.com/greenglobal/bagisto-usps",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "HUNG HUYNH BA MANH",
+            "email": "huynhbamanhhungg@gmail.com",
+            "homepage": "https://github.com/HuynhHungManh",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "GGPHP\\Shipping\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GGPHP\\Shipping\\Providers\\ShippingServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "vinceg/usps-php-api": "^1.0"
+    }
+}
