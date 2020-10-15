@@ -35,6 +35,9 @@ class TrackingController extends Controller
     {
         $trackings = uspsTrackById([$trackingId]);
 
+        if (! empty($trackings['message']))
+            $trackings['message'] = str_replace('<SUP>&reg;</SUP>', '', $trackings['message']);
+
         return view($this->_config['view'], compact('trackings', 'trackingId'));
     }
 }

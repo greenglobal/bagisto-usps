@@ -184,7 +184,7 @@
                     </div>
                 @else
                     <div class="message">
-                        <p>{{ $trackings['message'] }}<p>
+                        <p>{{ str_replace( `<SUP>&reg;</SUP>`, '', $trackings['message']) }}<p>
                     </div>
                 @endif
 

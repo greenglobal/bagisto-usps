@@ -18,6 +18,7 @@ return [
             'production-mode' => 'Production Mode',
             'first-class-mail-type' => 'First Class Mail Type',
             'tracking-title' => 'Tracking',
+            'trackings-title' => 'Trackings',
             'tracking-detail' => 'Track Detail',
             'event' => 'Event',
             'date-time' => 'Date Time',
@@ -27,6 +28,8 @@ return [
             'zip-code' => 'ZIP Code',
             'country' => 'Country',
             'firm-name' => 'Firm Name',
+            'tracking-id' => 'Tracking ID',
+            'order-id' => 'Order ID',
         ]
     ]
 ];
