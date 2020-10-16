@@ -4,6 +4,7 @@ This extension used for calculating shipping rate with the USPS services.
 - Calculate shipping rate with USPS services.
 - Track your shipment by tracking number in Admin Interface.
 - Track your shipment by tracking number in Shop Interface.
+- [API] Track your shipment by tracking number.
 ## Requirements
 - [Bagisto v1.2](https://github.com/bagisto/bagisto)
 - [vinceg/usps-php-api](https://packagist.org/packages/vinceg/usps-php-api)
